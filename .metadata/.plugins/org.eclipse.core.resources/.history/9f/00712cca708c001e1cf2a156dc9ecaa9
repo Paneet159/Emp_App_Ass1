@@ -1,0 +1,14 @@
+package in.co.vwits.emp.dao;
+
+import java.util.List;
+
+import in.co.vwits.emp.model.Employee;
+
+public abstract class EmployeeDao {
+	abstract Employee createEmployee(Employee employee);
+	abstract Employee getEmployeeById(int id);
+	abstract List<Employee> getAllEmployees();
+	abstract Employee updateEmployee(Employee employee);
+	abstract void deleteEmployee(int id);
+	
+}
